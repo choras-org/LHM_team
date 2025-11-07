@@ -7,8 +7,9 @@ In `assets` you will find the following:
 2. `IR_DG.wav`: Impulse response from DG
 3. `t30_DE.csv`: T30 results from DE
 4. `DG_modes.csv`: Frequencies of first 5 modes from DG 
-5. T30 results from DG (still work in progress)
-6. `notes.txt` for feedback and issues.
+5. `t30_DG_CHEATING.png`: T30 results from DG (got from Dirac)
+6. `DG_modes.png`: Frequencies of first 5 modes from DG
+7. `notes.txt` for feedback and issues.
 
 ## Members
 
