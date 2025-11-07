@@ -35,3 +35,5 @@
  +The downloaded simulated file should have a name of te simulation, but saves as "simulation-{number}'.
 
  + Add queue/parallel compute for multiple simulations
+
+ + The calculation is heavy and it makes the laptop freeze. It's goot to not use all the resources
