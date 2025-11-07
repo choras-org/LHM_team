@@ -29,6 +29,9 @@
  + Changing the simulation does not refresh the setting page. (It refreshes after changing to Surfaces tab and returning back)
  
  + A nice feature would be to examine the absorption coefficients for each material and also to see how each surface contribute to overall absorption
+ 
  +It would be nice to edit the material properties or create new one based on existing.
  
  +The downloaded simulated file should have a name of te simulation, but saves as "simulation-{number}'.
+
+ + Add queue/parallel compute for multiple simulations
