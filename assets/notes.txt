@@ -1,0 +1,34 @@
++ An option to see which material is assigned would be nice,
++ Surface naming could be editable
++ Colors of the surfaces according to absorption (eg. according to: https://odeon.dk/pdf/Claus%20Lynge%20Christensen,%20Visualising%20acoustic%20surface%20properties%20using%20colours.pdf)
++ Selecting multiple surfaces at once
++ Categories for assigning materials
+
+
++Impulse response length should be grayed out while simulation length is based on EDT
+
++ Initialisation should be a part of a progress,
++ It should be written what is being done
+
++ When the simulation is running, it is not possible to see the material properties
++ Material library is locked from scrolling to custom material properties,
+
++ When the simulation was running, opening the material library caused the progress bar to stuck.
+
++ Setting a characteristic length was not saved in json. (When duplicating the previous setting, the new one was not there)
+
+
++Issues with cancelling simulation:
+ - interface still says it is running,
+ - no message in backend that the simulation stopped
+ 
+ 
+ + The properties for the materials (and sources and receiver positions) should be different from the simulation
+ 
+ 
+ + Changing the simulation does not refresh the setting page. (It refreshes after changing to Surfaces tab and returning back)
+ 
+ + A nice feature would be to examine the absorption coefficients for each material and also to see how each surface contribute to overall absorption
+ +It would be nice to edit the material properties or create new one based on existing.
+ 
+ +The downloaded simulated file should have a name of te simulation, but saves as "simulation-{number}'.
