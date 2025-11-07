@@ -1,33 +1,35 @@
-# your_team_name
+# LMH Team
 
-Hello! This is a template repository in which you can upload your deliverables for the CHORAS ASSA Workshop. The deliverables are
+This is the deliverables for LMH team for the CHORAS workshop at ASSA. 
+
+In `assets` you will find the following:
+1. `IR_DE.wav`: Impulse response from DE
+2. `IR_DG.wav`: Impulse response from DG
+3. `t30_DE`: T30 results from DE in `.csv`
+4. 
+5.
+6. `notes.txt` for feedback and issues.
 
 1. 🎧 Impulse response from DE (.wav)
-
 2. 📊 T30 results from DE in (.csv)
-
 3. 5️⃣ Frequencies of first 5 modes from DG in (.csv)
-
 4. (Optional) 📊 T30 results from DG (up to the 250Hz band) in (.csv) as calculated with pyfar
-
 5. 📃 This readme filled with the correct information :)
-
-_Feel free to remove this section when you're done :)_
 
 ## Members
 
-- _Member 1_
-- _Member 2_
-- _Member 3_
+- Lauri
+- Maciej
+- Hossein
 
 ## Process
 
-This is where you can describe how you tackled the task
-
-- First we did..
-- Then we tried..
-- Finally we..
-- etc.
+- We started with the shoebox and the default material settings.
+- We tried DE with small charachteristich lenght ~0.1 and it was very slow.
+- We then moved to custom materials for ceiling and floor.
+- We also did cutom material for glass.
+- We tried to consider desks and chairs as part of the floor properties.
+- In the end, we had two types of glass, a cutom wall, a custom ceiling, and a custom floor.
 
 ## Input settings
 
@@ -35,73 +37,77 @@ For reproducibility of your results we would like to know what inputs you used t
 
 ### Geometry
 
-_Room2215_simple OR Room2215_withAbs_
+We did use [Room2215_withAbs.obj](https://github.com/choras-org/ASSA_Workshop/blob/main/Geometries/Room2215_withAbs.obj) from CHORAS repository.
 
 ### Source position
 
-- x:
-- y:
-- z:
+- x: 9.5
+- y: 4.5
+- z: 1.7
 
 ### Receiver position
 
-- x:
-- y:
-- z:
+- x: 2.5
+- y: 3
+- z: 1.4
 
 ### Surfaces
 
-If you created materials you can list them here with their absorption coefficients:
-
-- _material name_: 63 Hz, 125 Hz, 250 Hz, 500 Hz, 1000 Hz, 2000 Hz, 4000 Hz
-
-    _Example:_
-
-- My new material, 0.1, 0.2, 0.3, 0.4, 0.5, 0.1, 0.1
+We used the following custom materials:
+- Double Glazzed Window, 0.15, 0.15, 0.05, 0.03, 0.03, 0.02, 0.02
+- Plasticboard, 0.15, 0.15, 0.01, 0.06, 0.04, 0.04, 0.05
+- 500hz custom wall, 0.06, 0.06, 0.11, 0.6, 0.57, 0.63, 0.64
+- Micro Celing, 0.86, 0.86, 0.94, 0.65, 0.77, 0.76, 0.75
+- Floor boards on joist floor, 0.15, 0.15, 0.2, 0.1, 0.1, 0.1, 0.1
 
 Material properties:
-
-- Surface [1]: _material name_
-- Surface [6]: _material name_
+- Surface [1]: single pane of glass > 4mm
+- Surface [2]: single pane of glass > 4mm
+- Surface [3]: double glazzed window
+- Surface [4]: double glazzed window
+- Surface [5]: single pane of glass > 4mm
+- Surface [6]: single pane of glass > 4mm
+- Surface [7]: double glazzed window
+- Surface [8]: plasticboard
+- Surface [9]: plasticboard
+- Surface [10]: Acoustic ceiling (rockwool), 40 mm , 100 kg/m3, suspended 200 mm
+- Surface [11]: Acoustic ceiling (rockwool), 40 mm , 100 kg/m3, suspended 200 mm
+- Surface [12]: plasticboard
+- Surface [13]: 500hz custom wall
+- Surface [14]: 500hz custom wall
+- Surface [15]: Micro Celing
+- Surface [16]: Floor boards on joist floor
 - Rest of the surfaces: _material name_
 
 ### Settings
 
-You can paste the JSON here by clicking on the Open as JSON button in the Settings tab.
-
+These are the DE and DG settings:
 - DE
 
 ```json
-<DE settings as JSON>
+{
+  "sim_len_type": "edt",
+  "de_ir_length": 0.5,
+  "de_c0": 343,
+  "edt": 35,
+  "de_lc": 1
+}
 ```
 
 - DG
 
 ```json
-<DG settings as JSON>
+{
+  "dg_freq_upper_limit": 300,
+  "dg_c0": 343,
+  "dg_rho0": 1.213,
+  "dg_ir_length": 0.5,
+  "dg_poly_order": 4,
+  "dg_ppw": 2,
+  "dg_cfl": 1
+}
 ```
 
 ## 3 proposals for improving CHORAS
 
-Here you can list your 3 proposals for improving CHORAS. Out of the box ideas are welcome!
-
-- Proposal 1:
-- Proposal 2:
-- Proposal 3:
-
-## Functionality issues
-
-Please list any functionality issues you found:
-
-- Issue 1
-- Issue 2
-- ...
-
-## Feedback / experience
-
-Below you can tell us your feedback or describe your experience of working with CHORAS today! Please start every bullet with **I like..** or **I wish/wonder..**
-
-- I like ..
-- I wish ..
-- I wonder ..
-- ..
+For proposa, issues, and feedback, check our feedback note in `notes.txt`.
