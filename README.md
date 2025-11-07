@@ -8,7 +8,7 @@ In `assets` you will find the following:
 3. `t30_DE.csv`: T30 results from DE
 4. `DG_modes.csv`: Frequencies of first 5 modes from DG 
 5. `t30_DG_CHEATING.png`: T30 results from DG (got from Dirac)
-6. `DG_modes.png`: Frequencies of first 5 modes from DG
+6. `IR_DG_spectrum`: Spectrum of the modes from DG
 7. `notes.txt` for feedback and issues.
 
 ## Members
