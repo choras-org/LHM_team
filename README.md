@@ -5,16 +5,10 @@ This is the deliverables for LMH team for the CHORAS workshop at ASSA.
 In `assets` you will find the following:
 1. `IR_DE.wav`: Impulse response from DE
 2. `IR_DG.wav`: Impulse response from DG
-3. `t30_DE`: T30 results from DE in `.csv`
-4. 
-5.
+3. `t30_DE.csv`: T30 results from DE
+4. `DG_modes.csv`: Frequencies of first 5 modes from DG 
+5. T30 results from DG (still work in progress)
 6. `notes.txt` for feedback and issues.
-
-1. 🎧 Impulse response from DE (.wav)
-2. 📊 T30 results from DE in (.csv)
-3. 5️⃣ Frequencies of first 5 modes from DG in (.csv)
-4. (Optional) 📊 T30 results from DG (up to the 250Hz band) in (.csv) as calculated with pyfar
-5. 📃 This readme filled with the correct information :)
 
 ## Members
 
